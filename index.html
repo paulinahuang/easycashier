@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>快速收银台</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>快速收银台</h1>
+        <p>点击商品调整数量，实时显示应付总价。</p>
+      </header>
+
+      <section>
+        <div id="product-list" class="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="summary">
+        <div class="summary__row">
+          <span>已选商品种类</span>
+          <strong id="selected-types">0</strong>
+        </div>
+        <div class="summary__row">
+          <span>商品总件数</span>
+          <strong id="selected-count">0</strong>
+        </div>
+        <div class="summary__row summary__total">
+          <span>应付总价</span>
+          <strong id="total-price">¥0.00</strong>
+        </div>
+      </section>
+
+      <button id="clear-btn" class="clear-btn" type="button">清空已选</button>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
